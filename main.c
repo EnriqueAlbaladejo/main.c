@@ -1,12 +1,11 @@
 int main()
 {
-  int count = 0;
+  int count = 32;
 loop:
-  if (count < 32) 
+  if (count--) 
 {
-  printf("Hello School\n");
-  count++;
-  goto loop;
+    printf("Hello School\n");
+    goto loop;
 }
   return 0;
 }
