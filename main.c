@@ -1,9 +1,12 @@
 int main()
 {
-  int i;
-  for (i = 0; i < 10; i++)
-  {
-    printf("School\n");
-  }
+  int count = 0;
+loop:
+  if (count < 32) 
+{
+  printf("Hello School\n");
+  count++;
+  goto loop;
+}
   return 0;
 }
